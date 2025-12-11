@@ -1,0 +1,33 @@
+<svg width="600" height="900" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b74ff"/>
+      <stop offset="100%" stop-color="#5bb4ff"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="900" fill="url(#sky)" rx="20"/>
+  
+  <text x="50%" y="28%" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="48" 
+        fill="white" font-weight="700">
+    LEARN HOW TO FLY
+  </text>
+  
+  <text x="50%" y="38%" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="36" 
+        fill="white" font-weight="400">
+    in 4 Weeks
+  </text>
+
+  <circle cx="300" cy="560" r="160" fill="rgba(255,255,255,0.2)" />
+
+  <path d="M200 520 L300 450 L400 520 L360 650 L240 650 Z"
+        fill="white" opacity="0.9" />
+
+  <text x="50%" y="78%" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="22" 
+        fill="white" font-weight="300">
+    A Complete Beginner’s Transformation Guide
+  </text>
+</svg>
