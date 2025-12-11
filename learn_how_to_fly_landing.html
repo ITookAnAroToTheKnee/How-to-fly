@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- SEO -->
+  <title>Learn How to Fly in 4 Weeks — Digital Guide to Flying Confidently</title>
+  <meta name="description" content="Learn How to Fly in 4 Weeks — a practical digital book that takes you from first principles to confident solo flying in 4 weeks. Get step-by-step lessons, checklists, and fast-track exercises.">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Learn How to Fly in 4 Weeks — Digital Guide">
+  <meta property="og:description" content="Practical digital book: step-by-step lessons, checklists, and proven exercises to learn flying fast and safely.">
+  <meta property="og:type" content="book">
+  <meta property="og:image" content="data:image/svg+xml;utf8,">
+
+  <!-- Canonical (adjust after hosting) -->
+  <link rel="canonical" href="https://yourdomain.com/learn-how-to-fly.html">
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Learn How to Fly in 4 Weeks",
+    "author": {"@type": "Person","name":"Ava Keller"},
+    "description": "A compact, practical guide to gain flying skills in 4 weeks — exercises, checklists, and progress plans.",
+    "offers": {"@type":"Offer","price":"29.00","priceCurrency":"USD","url":"https://yourdomain.com/learn-how-to-fly.html"}
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#f5fbff; /* soft sky */
+      --card:#ffffff;
+      --accent:#0b74ff; /* sky blue */
+      --accent-2:#ffb347; /* warm accent */
+      --muted:#6b7280;
+      --shadow: 0 8px 20px rgba(11,116,255,0.08);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eaf6ff);color:#06202a;line-height:1.5}
+    header{backdrop-filter:saturate(120%);position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.6);border-bottom:1px solid rgba(6,32,42,0.04)}
+    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+    .brand svg{width:36px;height:36px}
+    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    main{max-width:1100px;margin:30px auto;padding:24px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.9),var(--card));padding:28px;border-radius:14px;box-shadow:var(--shadow)}
+    .kicker{display:inline-block;padding:6px 10px;background:rgba(11,116,255,0.09);color:var(--accent);border-radius:999px;font-weight:700;font-size:13px}
+    h1{font-size:28px;margin:12px 0 8px}
+    .subtitle{color:var(--muted);font-size:16px}
+    .cta-row{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer;display:inline-flex;gap:10px;align-items:center;transition:transform .12s ease,box-shadow .12s ease}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(11,116,255,0.16)}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid rgba(11,116,255,0.12)}
+    .price{font-weight:800;font-size:20px;margin-left:8px}
+
+    /* Cover */
+    .cover{background:linear-gradient(180deg,#fff 0%,#f0f9ff 100%);border-radius:12px;padding:18px;text-align:center;box-shadow:0 12px 30px rgba(3,70,161,0.06)}
+    .cover svg{max-width:100%;height:300px}
+
+    /* Sections */
+    section{margin-top:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);transition:transform .12s ease}
+    .feature:hover{transform:translateY(-6px)}
+    .feature h3{margin:8px 0}
+
+    /* Reviews */
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .review{background:linear-gradient(90deg,#fff,#fbfdff);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,32,52,0.04);transition:transform .12s ease}
+    .review:hover{transform:translateY(-6px)}
+    .stars{color:#f5a623}
+
+    /* Author */
+    .author{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(45deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:26px}
+
+    /* Checkout */
+    .checkout{display:flex;align-items:center;justify-content:space-between;padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#f7fcff);box-shadow:var(--shadow)}
+    .secure{display:flex;gap:8px;align-items:center;color:var(--muted);font-weight:700}
+    .secure svg{width:20px;height:20px}
+
+    footer{margin-top:36px;padding:18px;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3, .reviews{grid-template-columns:1fr}
+      .cover svg{height:220px}
+    }
+
+    /* small interactions */
+    .badge{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(11,116,255,0.06);color:var(--accent);font-weight:700}
+
+    /* anchor link style */
+    .toc{display:flex;gap:8px;align-items:center}
+    .toc a{font-size:14px}
+
+    /* modal sample */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,10,23,0.45);z-index:80}
+    .modal.open{display:flex}
+    .modal-card{background:white;padding:22px;border-radius:12px;max-width:720px;width:92%;box-shadow:0 24px 60px rgba(3,30,60,0.28)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#hero">
+        <!-- simple wing logo -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#0b74ff" d="M32 6c6 0 12 3 18 8-8 2-12 6-18 18C26 20 20 14 14 13 20 9 26 6 32 6z"/></svg>
+        <div>
+          <div style="font-weight:800">Learn How to Fly</div>
+          <div style="font-size:12px;color:var(--muted)">4-Week Digital Guide</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#benefits">Benefits</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#author">Author</a>
+        <a href="#buy">Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / Awareness -->
+    <section id="hero" class="hero">
+      <div class="hero-card">
+        <span class="kicker">Fast & Practical</span>
+        <h1>Learn How to Fly in 4 Weeks — From Ground to Confident Solo</h1>
+        <p class="subtitle">A step-by-step digital book with exercises, checklists, and weekly plans built for aspiring pilots and adventurous learners who want fast, safe progress.</p>
+
+        <div class="cta-row" role="group" aria-label="primary-ctas">
+          <button class="btn" onclick="document.getElementById('buy').scrollIntoView({behavior:'smooth'})">Buy Guide Now — $29 <span class="price">$29</span></button>
+          <button class="btn secondary" onclick="openSample()">Download Free Sample</button>
+        </div>
+
+        <!-- Short problem statement -->
+        <div style="margin-top:18px;color:var(--muted)">
+          <strong>Problem:</strong> Most beginners get stuck with scattered lessons and no clear weekly practice. This guide gives a focused 4-week framework you can follow daily.
+        </div>
+
+        <!-- quick bullets -->
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="badge">4-week plan</span>
+          <span class="badge">Checklists & logs</span>
+          <span class="badge">No prior experience</span>
+        </div>
+      </div>
+
+      <!-- cover + visual trust -->
+      <aside class="cover" aria-labelledby="book-title">
+        <!-- Book cover (generated SVG) -->
+        <svg role="img" aria-label="Learn How to Fly in 4 Weeks book cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#0b74ff"/>
+              <stop offset="1" stop-color="#4cc9f0"/>
+            </linearGradient>
+          </defs>
+          <rect width="360" height="520" rx="18" fill="url(#g1)"/>
+          <g transform="translate(24,36)">
+            <rect width="312" height="448" rx="12" fill="#fff"/>
+            <text x="24" y="64" font-family="Inter,Arial" font-size="22" font-weight="800" fill="#06202a">Learn How to Fly</text>
+            <text x="24" y="100" font-family="Inter,Arial" font-size="14" fill="#244a5b">in 4 Weeks</text>
+            <rect x="24" y="140" width="264" height="140" rx="8" fill="#eaf9ff"/>
+            <text x="36" y="190" font-size="12" fill="#0b74ff">Week-by-week plans</text>
+            <text x="36" y="210" font-size="12" fill="#0b74ff">Practice checklists</text>
+            <text x="36" y="230" font-size="12" fill="#0b74ff">Safety-first drills</text>
+            <text x="24" y="320" font-size="12" fill="#244a5b">By Ava Keller — Flight instructor & author</text>
+            <rect x="24" y="340" width="100" height="28" rx="6" fill="#0b74ff"/>
+            <text x="34" y="360" font-size="12" fill="#fff">Buy — $29</text>
+          </g>
+        </svg>
+      </aside>
+    </section>
+
+    <!-- Interest: Benefits -->
+    <section id="benefits">
+      <h2>Why this book works</h2>
+      <p class="subtitle">A clear path that converts time into competency with weekly targets and proven exercises.</p>
+      <div class="grid-3" aria-label="key-benefits">
+        <article class="feature">
+          <h3>Simple 4-week schedule</h3>
+          <p class="subtitle">Daily tasks and weekly milestones reduce friction and keep progress consistent.</p>
+        </article>
+        <article class="feature">
+          <h3>Safety-first exercises</h3>
+          <p class="subtitle">Checklists and decision-making drills that mirror what instructors teach.</p>
+        </article>
+        <article class="feature">
+          <h3>Progress logs & templates</h3>
+          <p class="subtitle">Printable templates to track hours, maneuvers, and instructor notes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trust: Reviews -->
+    <section id="reviews">
+      <h2>What readers say</h2>
+      <p class="subtitle">Real readers — real progress. (presented for social proof)</p>
+      <div class="reviews" role="list">
+        <figure class="review" role="listitem">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:48px;height:48px;border-radius:12px;background:#e7f8ff;display:flex;align-items:center;justify-content:center;font-weight:700">J</div>
+            <figcaption>
+              <strong>Jared M.</strong>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <div class="subtitle">"I went from nervous to confident in 3 weeks. Practical and direct."</div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="review" role="listitem">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:48px;height:48px;border-radius:12px;background:#fff4e6;display:flex;align-items:center;justify-content:center;font-weight:700">A</div>
+            <figcaption>
+              <strong>Amanda V.</strong>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <div class="subtitle">"Clear checklists — saved me countless hours in training."</div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="review" role="listitem">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:48px;height:48px;border-radius:12px;background:#fef7e6;display:flex;align-items:center;justify-content:center;font-weight:700">S</div>
+            <figcaption>
+              <strong>Sofia R.</strong>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <div class="subtitle">"The weekly plan made practice easy to follow — I actually improved."</div>
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Author -->
+    <section id="author">
+      <h2>About the author</h2>
+      <div class="author">
+        <div class="avatar" aria-hidden="true">AK</div>
+        <div>
+          <h3>Ava Keller — Certified Flight Instructor</h3>
+          <p class="subtitle">With 1,800+ flight hours and a decade of teaching, Ava built this guide to compress what really matters into an actionable 4-week path. Credible, instructional, and safety-first.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sales / Checkout (Action) -->
+    <section id="buy" style="margin-top:22px">
+      <h2>Buy the book</h2>
+      <div class="checkout">
+        <div>
+          <div style="font-size:18px;font-weight:800">Learn How to Fly in 4 Weeks — Digital Book</div>
+          <div style="color:var(--muted);margin-top:6px">Instant PDF download + printable checklists</div>
+          <ul style="margin-top:10px;color:var(--muted)">
+            <li>One-time payment — lifetime access</li>
+            <li>Fast download (PDF)</li>
+            <li>Includes bonus sample flight log</li>
+          </ul>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+          <div style="text-align:right"><div style="color:var(--muted);font-size:13px">Price</div><div style="font-weight:900;font-size:20px">$29</div></div>
+          <button class="btn" onclick="fakeCheckout()">Buy Guide Now</button>
+          <div class="secure"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="10" width="18" height="11" rx="2" stroke="#0b74ff" stroke-width="1.6"/></svg> Secure checkout</div>
+        </div>
+      </div>
+      <p class="subtitle" style="margin-top:10px">Need a free preview? Download a short sample and begin practicing right away.</p>
+    </section>
+
+    <!-- Optional Lead Magnet -->
+    <section id="leadmagnet" style="margin-top:22px">
+      <h2>Free Bonus: Starter Flight Log</h2>
+      <p class="subtitle">Sign up to get a printable starter flight log and a 7-day micro-practice plan.</p>
+      <form onsubmit="event.preventDefault();alert('Thanks — check your inbox for the sample!')" style="display:flex;gap:8px;max-width:480px">
+        <input type="email" required placeholder="your@email.com" aria-label="email" style="padding:12px;border-radius:8px;border:1px solid rgba(6,32,42,0.06);flex:1">
+        <button class="btn" type="submit">Get Free Sample</button>
+      </form>
+    </section>
+
+    <footer>
+      <small>© 2025 Learn How to Fly • <a href="#">Privacy</a> • <a href="#">Terms</a></small>
+    </footer>
+
+  </main>
+
+  <!-- Sample Modal -->
+  <div id="sampleModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <h3>Free sample: Week 1 micro-plan</h3>
+      <p style="color:var(--muted)">Inside: Day-by-day exercises, practice checklist, and a preview of the flight log.</p>
+      <pre style="background:#f6fbff;padding:12px;border-radius:8px;overflow:auto">Day 1: Preflight checks + 30 min ground study
+Day 2: Basic attitude control (30 min sim)
+Day 3: Traffic patterns and communications
+Day 4: Review + mini-checklist
+Day 5: Dual practice with instructor
+Day 6: Review & log
+Day 7: Consolidation</pre>
+      <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end">
+        <button class="btn secondary" onclick="closeSample()">Close</button>
+        <a class="btn" href="#" onclick="event.preventDefault();alert('Starting download... (demo)')">Download sample</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll polyfill for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const href=this.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      })
+    })
+
+    function openSample(){
+      const m=document.getElementById('sampleModal');m.classList.add('open');m.setAttribute('aria-hidden','false');
+    }
+    function closeSample(){
+      const m=document.getElementById('sampleModal');m.classList.remove('open');m.setAttribute('aria-hidden','true');
+    }
+    // Fake checkout — replace with real gateway integration
+    function fakeCheckout(){
+      alert('This demo uses a simulated checkout. Integrate Stripe/PayPal for real payments.');
+    }
+
+    // Accessibility: trap ESC for closing modal
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeSample()}})
+  </script>
+</body>
+</html>
