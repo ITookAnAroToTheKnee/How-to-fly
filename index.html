@@ -32,14 +32,13 @@
 
   <style>
     :root{
-      --bg:#f5fbff; /* soft sky */
-      --card:#ffffff;
-      --accent:#0096c7; /* sky blue */
-      --accent-2:#90e0ef; /* warm accent */
-      --muted:#6b7280;
-      --shadow: 0 8px 20px rgba(11,116,255,0.08);
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
+  --bg:#eaf6ff;          /* light sky background */
+  --card:#ffffff;        /* clean card / cloud white */
+  --accent:#0b74ff;      /* main sky blue */
+  --accent-2:#0054c2;    /* deeper flight blue */
+  --muted:#5d6f82;       /* steel blue for subtitles/text */
+  --shadow:0 8px 20px rgba(11,116,255,0.15);
+}
     *{box-sizing:border-box}
     body{margin:0;background:linear-gradient(180deg,var(--bg),#eaf6ff);color:#06202a;line-height:1.5}
     header{backdrop-filter:saturate(120%);position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.6);border-bottom:1px solid rgba(6,32,42,0.04)}
@@ -134,6 +133,7 @@
   <main>
     <!-- HERO / Awareness -->
     <section id="hero" class="hero">
+  <img src="book-cover.svg" alt="Learn How to Fly Book Cover">
       <div class="hero-card">
         <span class="kicker">Fast & Practical</span>
         <h1>Learn How to Fly in 4 Weeks — From Ground to Confident Solo</h1>
